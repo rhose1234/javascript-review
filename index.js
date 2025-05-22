@@ -121,9 +121,195 @@
 // console.log(Object.keys(person));
 // console.log(Object.entries(person));
 
-// Arrays
-const items = ["Marvelous", 7, 8, 9, {firstName : "Rose"}, 10, [2, 3, 4, 5], null, undefined]
-console.log(items)
-console.log(items[0])
-console.log(items[6][2])
+// const profiles = 
+// {
+// name : "Rose"
+// }
+// profiles["lastName"] = "Marvelous"
+// profiles.age = 30
+// console.log(profiles)
+
+// // Arrays
+// const items = ["Marvelous", 7, 8, 9, {firstName : "Rose"}, 10, [2, 3, 4, 5], null, undefined]
+// console.log(items)
+// console.log(items[0])
+// console.log(items[6][2])
+
+// create an array of data for phone and must not be less than 10, put all of the following properties
+// into consideration phonename, phone os version, phone version, phone storage capacity, phone camera 
+// resolution, phone is new or used, phone color, ramsize and color dynamically , output all phones using console.log and document.writeln
+
+// const phones = [
+//     {
+//         phonename : "Iphone",
+//         osVersion : "Ios",
+//         cameraResolution : "1800mp",
+//         isNew : false,
+//         storageCapacity: "500gb"
+    
+//     } ,
+//     {
+//         phonename : "Samsung",
+//         osVersion : "Andriod 14",
+//         cameraResolution : "1800mp",
+//         isNew : true,
+//         storageCapacity: "500gb"
+    
+//     } ,
+//      {
+//         phonename : "Redmi",
+//         osVersion : "Andriod 14",
+//         cameraResolution : "1800mp",
+//         isNew : true,
+//         storageCapacity: "500gb"
+    
+//     } ,
+//      {
+//         phonename : "Tecno",
+//         osVersion : "Andriod 14",
+//         cameraResolution : "1800mp",
+//         isNew : true,
+//         storageCapacity: "500gb"
+    
+//     } ,
+//      {
+//         phonename : "Nokia",
+//         osVersion : "Andriod 14",
+//         cameraResolution : "1800mp",
+//         isNew : true,
+//         storageCapacity: "500gb"
+    
+//     }, 
+//      {
+//         phonename : "Samsung",
+//         osVersion : "Andriod 14",
+//         cameraResolution : "1800mp",
+//         isNew : true,
+//          storageCapacity: "500gb"
+//     },
+//      {
+//         phonename : "Xaomi",
+//         osVersion : "Andriod 14",
+//         cameraResolution : "1800mp",
+//         isNew : true,
+//          storageCapacity: "500gb"
+    
+//     } ,
+//      {
+//         phonename : "Vivo",
+//         osVersion : "Andriod 14",
+//         cameraResolution : "1800mp",
+//         isNew : true,
+//          storageCapacity: "500gb"
+    
+//     }, 
+//      {
+//         phonename : "Oppo-Reno",
+//         osVersion : "Andriod 14",
+//         cameraResolution : "1800mp",
+//         isNew : true,
+//         storageCapacity: "500gb"
+    
+//     } , 
+//      {
+//         phonename : "OnePlus",
+//         osVersion : "Andriod 14",
+//         cameraResolution : "1800mp",
+//         isNew : true,
+//         storageCapacity: "500gb"
+    
+//     }  
+
+// ];
+
+// phones[0] ["ramSize"] = "40gb";
+
+// phones[0].phoneColor = "red";
+
+// phones[1]["phoneColor"] = "purple";
+// phones[1] ["ramSize"] =  "50gb";
+
+// phones[2]["phoneColor"] = "teal";
+// phones[2] ["ramSize"] =  "60gb";
+
+// phones[3]["phoneColor"] = "Pink";
+// phones[3] ["ramSize"] = "70gb";
+
+// phones[4]["phoneColor"] = "Green";
+// phones[4] ["ramSize"] = "80gb";
+
+// phones[5]["phoneColor"] = "aqua";
+// phones[5]["ramSize"] = "90gb";
+
+// phones[6]["phoneColor"] = "Coral";
+// phones[6] ["ramSize"] = "100gb";
+
+// phones[7]["phoneColor"] = "ox-blood";
+// phones[7] ["ramSize"] = "120gb";
+
+// phones[8]["phoneColor"] = "Nude";
+// phones[8] ["ramSize"] = "180gb";
+
+// phones[9]["phoneColor"] = "black";
+// phones[9] ["ramSize"] = "200gb";
+
+// console.log(phones);
+
+
+// function by declaration and function without parameters
+// function addNumbers() {
+//     let num1 = 30;
+//     let num2 = 50;
+//     let sum = num1 + num2;
+//     console.log(sum);
+// }
+// addNumbers();
+
+//function by declaration and functions with parameters
+// function sumNumbers(num1, num2){
+// let sum = num1 + num2
+// console.log(sum)
+// }
+// sumNumbers(40,90)
+// sumNumbers(30,90)
+// sumNumbers(3,4)
+// sumNumbers(50,50)
+
+//functions by expression without parameters
+// const subtract =  function (){
+//     let a = 30;
+//     let b = 20;
+//     let minus = a-b;
+//     console.log(minus)
+// }
+// subtract();
+
+//function by expression with parameters
+
+// const subtractNumbers = function (a, b) {
+//     let sum = a-b;
+//     return sum;
+// }
+// console.log(subtractNumbers(40, 20))
+// document.writeln(subtractNumbers(50,20))
+
+//function hoisting: invoking a function before declaring it
+// greetings("Marvelous");
+// function greetings(name) {
+//     console.log("Hello" + " " + name + ", " + " " + "how are you doing today?" )
+// }
+
+//function hoisting: using function by declaration and not function by expression invoking a function before declaring it using the return keyword
+console.log(greet("Marvelous"));
+alert(greet("Marvelous"));
+function greet(name)  {
+    return `Hello ${name}, how are you doing?`
+
+}
+
+console.log(addNumbers(10,20))
+function addNumbers(num1, num2) {
+    sum = num1 + num2;
+    return `The sum of ${num1} and ${num2} is ${sum}`
+}
 
